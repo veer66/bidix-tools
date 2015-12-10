@@ -1,0 +1,13 @@
+name: bidix_to_bin
+version: 0.0.1
+author: Vee Satayamas <vsatayamas@gmail.com>
+about: Converting Apertium Bidix to binary
+args:
+  - input:
+      help: Input file
+      required: true
+      index: 1
+  - output:
+      help: Output file
+      required: true
+      index: 2

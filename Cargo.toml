@@ -1,0 +1,21 @@
+[package]
+name = "bidix-tools"
+version = "0.0.1"
+authors = ["Vee Satayamas <vsatayamas@gmail.com>"]
+description = "Apertium bilingual dictionary reader"
+license = "GPL-3.0"
+
+[[bin]]
+name = "bidix_to_bin"
+path = "src/bidix_to_bin.rs"
+
+[[bin]]
+name = "list_l"
+path = "src/list_l.rs"
+
+
+[dependencies]
+rquery = "0.2.1"
+clap = { version = "1", features = ["yaml"] }
+bincode = "*"
+rustc-serialize = "*"

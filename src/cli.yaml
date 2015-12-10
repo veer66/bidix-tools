@@ -1,0 +1,13 @@
+name: Bidix Reader
+version: 0.0.1
+author: Vee Satayamas <vsatayamas@gmail.com>
+about: Apertium Bidix reader
+args:
+  - input:
+      help: Input file
+      required: true
+      index: 1
+  - output:
+      help: Output file
+      required: true
+      index: 2

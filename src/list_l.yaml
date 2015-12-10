@@ -1,0 +1,9 @@
+name: list_l
+version: 0.0.1
+author: Vee Satayamas <vsatayamas@gmail.com>
+about: List left side surface
+args:
+  - input:
+      help: Input file
+      required: true
+      index: 1
