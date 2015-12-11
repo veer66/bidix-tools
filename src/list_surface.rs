@@ -18,13 +18,17 @@ fn main() {
     let mut input_file = File::open(input_path)
         .expect("Cannot open file for reading");
     let mut buf = vec![];
+
     input_file
         .read_to_end(&mut buf)
         .expect("Cannot read");
+    
     let entries: Vec<Entry> = decode(&buf[..])
         .expect("Cannot decode");
 
     for entry in entries.iter() {
-        println!("{}", entry.l.surfaces[0]);
+        if entry.l.surfaces.len() > 0 {
+            println!("{}", entry.l.surfaces[0]);
+        }
     }
 }

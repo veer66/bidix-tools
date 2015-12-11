@@ -10,12 +10,12 @@ name = "bidix_to_bin"
 path = "src/bidix_to_bin.rs"
 
 [[bin]]
-name = "list_l"
-path = "src/list_l.rs"
+name = "list_surface"
+path = "src/list_surface.rs"
 
 
 [dependencies]
-rquery = "0.2.1"
+xml-rs = "0.2"
 clap = { version = "1", features = ["yaml"] }
-bincode = "*"
-rustc-serialize = "*"
+bincode = "0.4"
+rustc-serialize = "0.3"
