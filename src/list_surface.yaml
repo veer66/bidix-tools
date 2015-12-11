@@ -3,7 +3,12 @@ version: 0.0.1
 author: Vee Satayamas <vsatayamas@gmail.com>
 about: List left side surface
 args:
+  - pos:
+      help: left/right
+      required: true
+      index: 1
   - input:
       help: Input file
       required: true
-      index: 1
+      index: 2
+      
