@@ -12,7 +12,7 @@ use std::fs::File;
 use std::io::Read;
 
 fn main() {
-    let yaml = load_yaml!("list_l.yaml");
+    let yaml = load_yaml!("list_surface.yaml");
     let matches = App::from_yaml(yaml).get_matches();
     let input_path = matches.value_of("input").unwrap();
     let mut input_file = File::open(input_path)
